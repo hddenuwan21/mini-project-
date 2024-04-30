@@ -1,0 +1,124 @@
+/* Blog section */
+
+
+:root{
+    --container-color:#1a1e21;
+    --second-color:#fd8f44;
+    --text-color:#172317;
+    --bg-color:#fff;
+    --main-color:hsl(86, 45%, 54%);
+    
+   ::selection{
+   color: var(--bg-color);
+   background: var(--second-color);
+  
+  }
+}
+
+
+
+
+
+
+#blog {
+    padding: 4rem 0;
+  }
+  
+  .title-wrap {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sm-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .lg-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  .blog-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .blog-item {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .blog-item .blog-item-top {
+    position: relative;
+  }
+  
+  .blog-date {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+  .blog-item-bottom {
+    padding: 1rem;
+  }
+  
+  .blog-item-bottom span {
+    color: #000000;
+  }
+  
+  .blog-item-bottom a {
+color: var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .blog-item-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .blog-item-bottom p.text {
+    color: #555;
+    margin-top: 1rem;
+  }
+  /* Common styles for blog items */
+.blog-item {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 768px) {
+    .blog-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 576px) {
+    .blog-item {
+      width: calc(100% - 20px);
+    }
+  }
+  
